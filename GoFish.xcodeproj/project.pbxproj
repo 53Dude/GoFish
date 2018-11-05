@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4324AB9218BFF1300CC299B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4324AB8218BFF1300CC299B /* main.cpp */; };
+		E4323888218C0135004B1D05 /* go_fish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4324AB8218BFF1300CC299B /* go_fish.cpp */; };
+		E432388B218C016C004B1D05 /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4323889218C016C004B1D05 /* card.cpp */; };
+		E432388E218C019C004B1D05 /* deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E432388C218C019C004B1D05 /* deck.cpp */; };
+		E4323890218C01DC004B1D05 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E432388F218C01DC004B1D05 /* player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E4324AB5218BFF1300CC299B /* GoFish */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GoFish; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4324AB8218BFF1300CC299B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E4323889218C016C004B1D05 /* card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = card.cpp; sourceTree = "<group>"; };
+		E432388A218C016C004B1D05 /* card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = card.h; sourceTree = "<group>"; };
+		E432388C218C019C004B1D05 /* deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deck.cpp; sourceTree = "<group>"; };
+		E432388D218C019C004B1D05 /* deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deck.h; sourceTree = "<group>"; };
+		E432388F218C01DC004B1D05 /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		E4323891218C020B004B1D05 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		E4324AB5218BFF1300CC299B /* go_fish */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = go_fish; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4324AB8218BFF1300CC299B /* go_fish.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = go_fish.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +58,7 @@
 		E4324AB6218BFF1300CC299B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4324AB5218BFF1300CC299B /* GoFish */,
+				E4324AB5218BFF1300CC299B /* go_fish */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +66,13 @@
 		E4324AB7218BFF1300CC299B /* GoFish */ = {
 			isa = PBXGroup;
 			children = (
-				E4324AB8218BFF1300CC299B /* main.cpp */,
+				E4324AB8218BFF1300CC299B /* go_fish.cpp */,
+				E432388F218C01DC004B1D05 /* player.cpp */,
+				E4323891218C020B004B1D05 /* player.h */,
+				E432388C218C019C004B1D05 /* deck.cpp */,
+				E432388D218C019C004B1D05 /* deck.h */,
+				E4323889218C016C004B1D05 /* card.cpp */,
+				E432388A218C016C004B1D05 /* card.h */,
 			);
 			path = GoFish;
 			sourceTree = "<group>";
@@ -65,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4324AB4218BFF1200CC299B /* GoFish */ = {
+		E4324AB4218BFF1200CC299B /* go_fish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4324ABC218BFF1300CC299B /* Build configuration list for PBXNativeTarget "GoFish" */;
+			buildConfigurationList = E4324ABC218BFF1300CC299B /* Build configuration list for PBXNativeTarget "go_fish" */;
 			buildPhases = (
 				E4324AB1218BFF1200CC299B /* Sources */,
 				E4324AB2218BFF1200CC299B /* Frameworks */,
@@ -77,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = GoFish;
+			name = go_fish;
 			productName = GoFish;
-			productReference = E4324AB5218BFF1300CC299B /* GoFish */;
+			productReference = E4324AB5218BFF1300CC299B /* go_fish */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4324AB4218BFF1200CC299B /* GoFish */,
+				E4324AB4218BFF1200CC299B /* go_fish */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4324AB9218BFF1300CC299B /* main.cpp in Sources */,
+				E4323890218C01DC004B1D05 /* player.cpp in Sources */,
+				E4323888218C0135004B1D05 /* go_fish.cpp in Sources */,
+				E432388B218C016C004B1D05 /* card.cpp in Sources */,
+				E432388E218C019C004B1D05 /* deck.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +284,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4324ABC218BFF1300CC299B /* Build configuration list for PBXNativeTarget "GoFish" */ = {
+		E4324ABC218BFF1300CC299B /* Build configuration list for PBXNativeTarget "go_fish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4324ABD218BFF1300CC299B /* Debug */,
