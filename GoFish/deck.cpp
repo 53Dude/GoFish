@@ -46,10 +46,14 @@ void Deck::shuffle(){
         
         int iOne=rand()%working.size();
         int iTwo=rand()%working.size();
-        while(iOne==0||iTwo==0){
+        while(iOne!=iTwo){
             iOne=rand()%working.size();
             iTwo=rand()%working.size();
         }
+        
+        tempCard=working[0];
+        working[0]=working[iOne];
+        working[iOne]=tempCard;
         
         tempCard=working[iOne];
         working[iOne]=working[iTwo];

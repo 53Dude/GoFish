@@ -49,7 +49,7 @@ public:
     //OPTIONAL
     // comment out if you decide to not use it
     //Does the player have a card with the same rank as c in her hand?
-    bool rankInHand(Card c) const;
+    int rankInHand(Card c) const;
     
     //uses some strategy to choose one card from the player's
     //hand so they can say "Do you have a 4?"
@@ -66,6 +66,10 @@ public:
     
     int getHandSize() const;
     int getBookSize() const;
+    
+    string goFish(Card a,Card c);
+    
+    Card removeCardI(int i);
     
     //OPTIONAL
     // comment out if you decide to not use it

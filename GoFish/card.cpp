@@ -56,8 +56,13 @@ string Card::rankString(int r) const{
         return "Q";
     else if(r==13)
         return "K";
-    else if(r!=1)
-        return(to_string(r));
+    else if(r!=1){
+        string out_string;
+        stringstream ss;
+        ss << r;
+        out_string = ss.str();
+        return out_string;
+    }
     return "A";
 }
 
