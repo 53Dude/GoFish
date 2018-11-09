@@ -67,8 +67,12 @@ public:
     int getHandSize() const;
     int getBookSize() const;
     
+    //moves the card that the player was trying to find a match
+    //for to the end of the hand while also adding the drawn card
+    //to the hand
     string goFish(Card a,Card c);
     
+    //removes a card from the hand based on its number in the hand
     Card removeCardI(int i);
     
     //OPTIONAL

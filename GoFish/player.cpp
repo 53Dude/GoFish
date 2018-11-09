@@ -44,7 +44,7 @@ int Player::rankInHand(Card c) const{
         if(myHand[i].getRank()==c.getRank())
            return i;
     }
-    return 0;
+    return -1;
 }
 
 
