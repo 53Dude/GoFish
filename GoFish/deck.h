@@ -24,6 +24,7 @@
 #define deck_h
 
 #include <stdio.h>
+#include <algorithm>
 #include "card.h"
 
 class Deck

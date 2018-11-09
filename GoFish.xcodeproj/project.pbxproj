@@ -11,9 +11,25 @@
 		E432388B218C016C004B1D05 /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4323889218C016C004B1D05 /* card.cpp */; };
 		E432388E218C019C004B1D05 /* deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E432388C218C019C004B1D05 /* deck.cpp */; };
 		E4323890218C01DC004B1D05 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E432388F218C01DC004B1D05 /* player.cpp */; };
+		E432389F218FFE6F004B1D05 /* card_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4323892218FE25F004B1D05 /* card_demo.cpp */; };
+		E43238A0218FFE6F004B1D05 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E432388F218C01DC004B1D05 /* player.cpp */; };
+		E43238A1218FFE6F004B1D05 /* player.h in Sources */ = {isa = PBXBuildFile; fileRef = E4323891218C020B004B1D05 /* player.h */; };
+		E43238A2218FFE6F004B1D05 /* deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E432388C218C019C004B1D05 /* deck.cpp */; };
+		E43238A3218FFE6F004B1D05 /* deck.h in Sources */ = {isa = PBXBuildFile; fileRef = E432388D218C019C004B1D05 /* deck.h */; };
+		E43238A4218FFE6F004B1D05 /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4323889218C016C004B1D05 /* card.cpp */; };
+		E43238A5218FFE6F004B1D05 /* card.h in Sources */ = {isa = PBXBuildFile; fileRef = E432388A218C016C004B1D05 /* card.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E4323896218FFE5A004B1D05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		E4324AB3218BFF1200CC299B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,11 +48,20 @@
 		E432388D218C019C004B1D05 /* deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deck.h; sourceTree = "<group>"; };
 		E432388F218C01DC004B1D05 /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		E4323891218C020B004B1D05 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		E4323892218FE25F004B1D05 /* card_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = card_demo.cpp; sourceTree = "<group>"; };
+		E4323898218FFE5A004B1D05 /* card_demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = card_demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4324AB5218BFF1300CC299B /* go_fish */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = go_fish; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4324AB8218BFF1300CC299B /* go_fish.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = go_fish.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E4323895218FFE5A004B1D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4324AB2218BFF1200CC299B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E4324AB5218BFF1300CC299B /* go_fish */,
+				E4323898218FFE5A004B1D05 /* card_demo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E4324AB8218BFF1300CC299B /* go_fish.cpp */,
+				E4323892218FE25F004B1D05 /* card_demo.cpp */,
 				E432388F218C01DC004B1D05 /* player.cpp */,
 				E4323891218C020B004B1D05 /* player.h */,
 				E432388C218C019C004B1D05 /* deck.cpp */,
@@ -80,6 +107,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E4323897218FFE5A004B1D05 /* card_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E432389C218FFE5A004B1D05 /* Build configuration list for PBXNativeTarget "card_demo" */;
+			buildPhases = (
+				E4323894218FFE5A004B1D05 /* Sources */,
+				E4323895218FFE5A004B1D05 /* Frameworks */,
+				E4323896218FFE5A004B1D05 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = card_demo;
+			productName = card_demo;
+			productReference = E4323898218FFE5A004B1D05 /* card_demo */;
+			productType = "com.apple.product-type.tool";
+		};
 		E4324AB4218BFF1200CC299B /* go_fish */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4324ABC218BFF1300CC299B /* Build configuration list for PBXNativeTarget "go_fish" */;
@@ -106,6 +150,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Guy Co.";
 				TargetAttributes = {
+					E4323897218FFE5A004B1D05 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					E4324AB4218BFF1200CC299B = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -124,11 +171,26 @@
 			projectRoot = "";
 			targets = (
 				E4324AB4218BFF1200CC299B /* go_fish */,
+				E4323897218FFE5A004B1D05 /* card_demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E4323894218FFE5A004B1D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E432389F218FFE6F004B1D05 /* card_demo.cpp in Sources */,
+				E43238A0218FFE6F004B1D05 /* player.cpp in Sources */,
+				E43238A1218FFE6F004B1D05 /* player.h in Sources */,
+				E43238A2218FFE6F004B1D05 /* deck.cpp in Sources */,
+				E43238A3218FFE6F004B1D05 /* deck.h in Sources */,
+				E43238A4218FFE6F004B1D05 /* card.cpp in Sources */,
+				E43238A5218FFE6F004B1D05 /* card.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4324AB1218BFF1200CC299B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +205,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		E432389D218FFE5A004B1D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUEM785YN3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E432389E218FFE5A004B1D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUEM785YN3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E4324ABA218BFF1300CC299B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -275,6 +355,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E432389C218FFE5A004B1D05 /* Build configuration list for PBXNativeTarget "card_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E432389D218FFE5A004B1D05 /* Debug */,
+				E432389E218FFE5A004B1D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E4324AB0218BFF1200CC299B /* Build configuration list for PBXProject "GoFish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

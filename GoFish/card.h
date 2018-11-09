@@ -30,6 +30,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 class Card
@@ -51,8 +53,8 @@ public:
     string rankString(int r)       const;  // return "A", "2", ..."Q"
     
     
-    bool operator == (const Card& rhs) const;
-    bool operator != (const Card& rhs) const;
+    bool operator ==(Card const &rhs);
+    bool operator !=(Card const &rhs);
     
     
     
